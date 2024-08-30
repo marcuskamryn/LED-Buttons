@@ -2,16 +2,16 @@ import board
 import digitalio as dio
 import time
 
-led_one = dio.DigitalInOut(board.GP0)
+led_one = dio.DigitalInOut(board.D2)
 led_one.direction = dio.Direction.OUTPUT
 
-led_two = dio.DigitalInOut(board.GP1)
+led_two = dio.DigitalInOut(board.D3)
 led_two.direction = dio.Direction.OUTPUT
 
-led_three = dio.DigitalInOut(board.GP2)
+led_three = dio.DigitalInOut(board.D4)
 led_three.direction = dio.Direction.OUTPUT
 
-led_four = dio.DigitalInOut(board.GP3)
+led_four = dio.DigitalInOut(board.D5)
 led_four.direction = dio.Direction.OUTPUT
 
 while True:
