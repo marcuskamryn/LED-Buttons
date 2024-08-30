@@ -14,23 +14,14 @@ led_three.direction = dio.Direction.OUTPUT
 led_four = dio.DigitalInOut(board.D5)
 led_four.direction = dio.Direction.OUTPUT
 
+def on_off(name):
+    name.value = True
+    time.sleep(1)
+    name.value = False
+    time.sleep(1)
+
 while True:
-    led_one.value = True
-    time.sleep(1)
-    led_one.value = False
-    time.sleep(1)
-
-    led_two.value = True
-    time.sleep(1)
-    led_two.value = False
-    time.sleep(1)
-
-    led_three.value = True
-    time.sleep(1)
-    led_three.value = False
-    time.sleep(1)
-
-    led_four.value = True
-    time.sleep(1)
-    led_four.value = False
-    time.sleep(1)
+    on_off(led_one)
+    on_off(led_two)
+    on_off(led_three)
+    on_off(led_four)
