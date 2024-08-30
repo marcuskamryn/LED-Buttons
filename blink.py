@@ -2,7 +2,7 @@ import board
 import digitalio as dio
 import time
 
-led = dio.DigitalInOut(board.GP0)
+led = dio.DigitalInOut(board.D2)
 led.direction = dio.Direction.OUTPUT
 
 while True:
